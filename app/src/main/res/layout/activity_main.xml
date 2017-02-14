@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Register">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:typeface="serif"
+          />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mEtcountry"
+            android:layout_marginLeft="15dp"
+            android:textColor="#ffffff"
+            android:inputType="phone"
+            android:hint="+96"
+            android:textColorHint="#cccccc"
+            android:textSize="16sp"
+            android:typeface="serif"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No"
+                android:id="@+id/textView2"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:typeface="serif"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mEtphoneno"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:inputType="phone"
+                android:hint="599492806"
+                android:textColorHint="#cccccc"
+                android:typeface="serif"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:paddingLeft="60dp"
+            android:id="@+id/mBtregister"
+            android:paddingRight="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbg"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#21455d"
+    tools:context="quadrant.sampletest.Verificaton">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/msg"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS Sent to"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+918099830656"
+            android:layout_marginTop="5dp"
+            android:id="@+id/mTxtphone_number"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Number"
+            android:layout_marginTop="5dp"
+            android:id="@+id/mbtEditNumber"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:background="@drawable/editbtbg"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Please enter the verfication code \n recived by SMS"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:typeface="serif"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:ems="10"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/mEtVerify"
+            android:background="@drawable/edittextbg"
+          />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:id="@+id/mBtVerify"
+            android:textColor="#ffffff"
+            android:typeface="serif"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:paddingRight="80dp"
+            android:paddingLeft="80dp"
+            android:background="@drawable/buttonbg"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:id="@+id/mBtResend"
+            android:textColor="#ffffff"
+            android:typeface="serif"
+            android:textSize="18sp"
+            android:paddingRight="80dp"
+            android:paddingLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editbtbg"
+            />
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
